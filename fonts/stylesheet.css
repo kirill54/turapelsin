@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'playregular';
+    src: url('fonts/play-regular-webfont.eot');
+    src: url('fonts/play-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/play-regular-webfont.woff') format('woff'),
+         url('fonts/play-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'playregular';
+src: url('fonts/chunk-webfont.svg') format('svg');
+
+}
