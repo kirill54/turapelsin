@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <title>Туристическое агентство "Апельсин"</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/ei-slider.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
     <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-
+    <link href="css/carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -61,15 +62,15 @@
       <div class="container">
         <div class="header-line">
 
-          <div class="logo col-md-3">
+          <div class="logo col-md-4">
             <a href="#"><img src="img/logo.png" alt="Логотип туристическое агентство 'Апельсин'" width="181" height="61"></a>
           </div>
-          <div class="header-contacts col-md-3">
+          <div class="header-contacts col-md-4">
             <span>Позвоните нам:</span>
             <p>+7 (383) <strong>380-55-00</strong></p>
             <p>+7 (383) <strong>347-11-00</strong></p>
           </div>
-          <button type="button" class="order-btn fancy-btn col-md-3 col-md-offset-2">Отправить заявку</button>
+          <button type="button" class="order-btn fancy-btn col-md-3">Отправить заявку</button>
 
         </div>
       </div>
@@ -177,7 +178,7 @@
           </div>
           <div class="col-md-3">
             <p class="title"><span>03</span>  Дата вылета</p>
-            <input type="text" value="02.16.2012" class="datepicker form-control">
+            <input type="text" value="02.16.2012" class="datepicker">
             <label class="days"><input type="checkbox"> &#177; 7 дней</label>
           </div>
           <div class="col-md-3">
@@ -222,7 +223,7 @@
             <div id="slider-range"></div>
           </div>
           <div class="col-md-3">
-           <button class="search-btn fancy-btn" type="button">Подобрать варианты!</button>
+           <button class="btn btn-default btn-lg search-tours" type="button">Подобрать варианты!</button>
           </div>
         </div>
       </div>
@@ -231,6 +232,9 @@
     
     <div class="container">
       <div class="content col-md-9">
+        <div class="title-block">
+            <h2>Описание стран</h2>
+        </div>
         <ul class="thumbnails country-list">
           <li class="col-md-4">
             <div class="thumbnail">
@@ -268,8 +272,45 @@
               <a href="#" class="caption">Испания</a>
               </div>
             </li>
-          </ul>
+            <li class="col-md-4">
+              <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Чехия</a>
+              </div>
+            <li class="col-md-4">
+              <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Тунис</a>
+              </div>
+            </li>
+            <li class="col-md-4">
+              <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Мексика</a>
+              </div>
+            </li>
+            <li class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Тайланд</a>
+            </div>
+          </li>
+            <li class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Турция</a>
+            </div>
+          </li>
+            <li class="col-md-4">
+            <div class="thumbnail">
+              <img src="http://placehold.it/320x200" alt="ALT NAME">
+              <a href="#" class="caption">Греция</a>
+            </div>
+          </li>
+          </ul>      
       </div>
+
+
       <div class="side-bar col-md-3">
         <div class="help-info box">
           <h2>Нужна помощь?</h2>
@@ -318,11 +359,11 @@
         <div class="help-info box">
           <script type="text/javascript" src="//vk.com/js/api/openapi.js?101"></script>
 
-          <!-- VK Widget 
+          <!-- VK Widget -->
           <div id="vk_groups"></div>
           <script type="text/javascript">
           VK.Widgets.Group("vk_groups", {mode: 2, width: "auto", height: "400", wide: 1, color3: "fea321"}, 24557412);
-          </script>-->
+          </script>
         </div>
       </div>
     </div>
@@ -361,15 +402,26 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="assets/js/holder.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="js/bootstrap-select.js"></script>
     <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#ei-slider').eislideshow({
+          animation     : 'center',
+          autoplay      : true,
+          slideshow_interval  : 5000,
+          titlesFactor    : 0
+          });
+        });
 
+    </script>
     <script type="text/javascript">
       window.onload=function(){
       $('.selectpicker').selectpicker();
@@ -378,7 +430,7 @@
       });
       };
     </script>
-   <!-- <script>
+    <script>
       $(function() {
         $( "#slider-range" ).slider({
           range: true,
@@ -393,16 +445,5 @@
           " до " + $( "#slider-range" ).slider( "values", 1 ) + " руб. за 1 чел.");
       });
   </script>
-  <script type="text/javascript">
-      $(function() {
-        $('#ei-slider').eislideshow({
-          animation     : 'center',
-          autoplay      : true,
-          slideshow_interval  : 4000,
-          titlesFactor    : 0
-          });
-        });
--->
-    </script>
   </body>
 </html>
